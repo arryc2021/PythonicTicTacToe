@@ -1,27 +1,122 @@
-# PythonicTicTacToe
-<h1 align="center">Hi 👋, I'm Arunava Chattopadhyay</h1>
-<h3 align="center">"Seasoned Data Scientist | 15+ Years of Expertise in Machine Learning, AI, and Big Data Solutions"</h3>
+# Tic Tac Toe Game with Minimax Algorithm
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=arryc2021&label=Profile%20views&color=0e75b6&style=flat" alt="arryc2021" /> </p>
+## 🎯 Objective
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=arryc2021" alt="arryc2021" /></a> </p>
+This project implements a simple **Tic Tac Toe** game in Python, where a human player competes against an AI opponent. The AI uses the **Minimax algorithm**, enabling it to play optimally and never lose.
 
-- 🔭 I’m currently working on [TicTacToe with python](https://github.com/arryc2021/PythonicTicTacToe.git)
+---
 
-- 🌱 I’m currently learning **Langchain,Phidata,Transformers**
+## 🕹️ Game Description
 
-- 💬 Ask me about **Predictive ,Prescriptive Analytics**
+Tic Tac Toe is a 2-player game played on a 3×3 grid. Players take turns marking a square with `X` or `O`.  
+- The first player to get **three in a row** (horizontally, vertically, or diagonally) wins.  
+- If all squares are filled and neither player has won, the game ends in a **tie**.
 
-- 📫 How to reach me **arunava.chattopadhyay2020@gmail.com**
+---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## 🧠 Minimax Algorithm
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://cassandra.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-icon.svg" alt="cassandra" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/> </a> <a href="https://hive.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg" alt="hive" width="40" height="40"/> </a> <a href="https://ifttt.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg" alt="ifttt" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://www.elastic.co/kibana" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="kibana" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+The **Minimax algorithm** is a recursive decision-making algorithm used in two-player games. It simulates all possible game states to determine the best move by assuming that both players play optimally.
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=arryc2021&show_icons=true&locale=en&layout=compact" alt="arryc2021" /></p>
+### Algorithm Steps
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=arryc2021&show_icons=true&locale=en" alt="arryc2021" /></p>
+1. **Evaluate the current board**  
+   Check if there is a winner or if the board is full (tie).
+
+2. **Generate possible moves**  
+   List all empty cells available for a move.
+
+3. **Simulate each move**  
+   For each available move, place the symbol and recursively evaluate the result.
+
+4. **Recursively call Minimax**  
+   Alternate between minimizing and maximizing player scores for each depth level.
+
+5. **Choose the optimal move**  
+   - The AI (Maximizer) chooses the move with the highest score.
+   - The human (Minimizer) is assumed to pick moves that minimize the AI’s score.
+
+This ensures the AI makes the most optimal decisions possible.
+
+---
+
+## 🧱 Code Structure
+
+- `insertLetter(letter, pos)`: Places an `X` or `O` at the given position.
+- `spaceIsFree(pos)`: Checks if a position on the board is empty.
+- `printBoard(board)`: Displays the current board.
+- `isBoardFull(board)`: Returns `True` if all cells are filled.
+- `isWinner(bo, le)`: Checks if the player with letter `le` has won.
+- `minimax(board, depth, isMaximizing)`: The recursive Minimax algorithm.
+- `aiMove()`: Finds and makes the best move using Minimax.
+- `main()`: Controls the flow of the game (human vs. AI).
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+- Python 3.x installed on your machine
+
+### 💾 Installation
+
+1. Clone the repository or download the `tictactoe.py` file.
+2. Open a terminal and navigate to the project directory.
+
+### ▶️ Running the Game
+
+```bash
+python tictactoe.py
+🕵️ Example Gameplay
+You play as X and AI plays as O
+
+1 | 2 | 3
+---------
+4 | 5 | 6
+---------
+7 | 8 | 9
+
+Please select a position to place an 'X' (1-9): 5
+
+1 | 2 | 3
+---------
+4 | X | 6
+---------
+7 | 8 | 9
+Continue playing until there is a winner or the board is full.
+📝 Notes
+This is a basic implementation of the Minimax algorithm.
+
+It assumes the AI always plays optimally and instantly.
+
+No depth-limiting or alpha-beta pruning is used (these could improve performance for more complex games).
+
+Great for learning AI fundamentals and game algorithms.
+
+📚 Future Improvements
+Add GUI using tkinter or pygame
+
+Support player vs. player mode
+
+Implement Alpha-Beta pruning for optimization
+
+Add difficulty levels by limiting Minimax depth
+
+👨‍💻 Author
+Made with ❤️ for learning and fun.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you'd like to add badges, GitHub Actions, or convert it into a multi-file project with tests or GUI.
+
+
+
+
+
+
 
